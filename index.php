@@ -28,7 +28,7 @@
             <li><a href="http://docs.amazonwebservices.com/elasticbeanstalk/latest/dg/customize-containers-resources.html">Customizing Environment Resources</a></li>
         </ul>
 
-        <h2>AWS SDK for PHP</h2>
+        <h2>AWS SDK for PHP abd for kids</h2>
         <ul>
             <li><a href="http://aws.amazon.com/sdkforphp">AWS SDK for PHP home</a></li>
             <li><a href="http://aws.amazon.com/php">PHP developer center</a></li>
