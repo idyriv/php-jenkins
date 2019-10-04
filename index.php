@@ -12,7 +12,8 @@
 </head>
 <body>
     <section class="congratulations">
-        <h1><font color="red">Congratulations IvanD!</h1>
+        <h1><font color="red">Congratulations Boys!</h1>
+        <h2><font color="green">USA-BROOKLYN-NYC!</h2>
         <p>Your AWS Elastic Beanstalk <em>PHP</em> application is now running on your own dedicated environment in the AWS&nbsp;Cloud</p>
         <p>You are running PHP version <?= phpversion() ?></p>
         </section>
@@ -33,7 +34,7 @@
             <li><a href="http://aws.amazon.com/php">PHP developer center</a></li>
             <li><a href="https://github.com/aws/aws-sdk-php">AWS SDK for PHP on GitHub</a></li>
         </ul>
-        <h2>Some Hello Pictures</h2>
+        <h2>Some Pictures</h2>
         <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Mars%2C_Earth_size_comparison.jpg" alt="Marsik" wight="128" height="128" /> 
         <img src="https://www.techdonut.co.uk/sites/default/files/how-to-find-the-best-cloud-services-for-your-business-285307991.jpg" alt="Marsik2" wight="128" height="128" />           
     </section>
