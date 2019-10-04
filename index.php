@@ -16,6 +16,7 @@
         <h2><font color="green">USA-BROOKLYN-NYC!</h2>
         <p>Your AWS Elastic Beanstalk <em>PHP</em> application is now running on your own dedicated environment in the AWS&nbsp;Cloud</p>
         <p>You are running PHP version <?= phpversion() ?></p>
+        <img src="https://bucketplus.s3.us-east-2.amazonaws.com/IMG_4249.jpg" alt="Marsik2" wight="512" height="512" />
         </section>
 
     <section class="instructions">
