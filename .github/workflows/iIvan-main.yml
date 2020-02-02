@@ -1,0 +1,26 @@
+#---------------------------------------
+#----------------iIvan------------------
+#----------------2020-------------------
+
+
+name: my-1-file
+
+on: 
+  push:
+    branches:
+      - master 
+
+
+jobs:
+  my-testin-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello iIvan testing"
+    
+  my-deploy1:
+    runs-on: ubuntu-latest    
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello iIvan deploy job"
+    
