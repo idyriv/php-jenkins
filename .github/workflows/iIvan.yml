@@ -12,7 +12,7 @@ on:
       - master
 
 jobs:
-  1-pipline:
+  1_pipline:
 
     runs-on: ubuntu-latest
 
@@ -20,7 +20,7 @@ jobs:
     - name: Git clone our repo
     - uses: actions/checkout@v2
       
-    - name: Create in Zip depl package
+    - name: Create ZIP deployment package
     - uses: zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x *.git*
       
       
