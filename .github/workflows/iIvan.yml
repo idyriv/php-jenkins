@@ -1,10 +1,10 @@
-name: CI-CD-Pipline-to-AWS
-env: 
-  S3_BUCKET_NAME     : "ivan-test-github"
-  EB_APPLICATION_NAME: "Ivan-env-github"
-  EB_ENVIRONMENT_NAME: "Ivan-first-app777" 
-  DEPLOY_PACKAGE_NAME: "ivan_app_$(( github.sha )).zip"
-  AWS_REGION_NAME    : "us-east-2"
+name : CI-CD-Pipline-to-AWS
+env  : 
+  S3_BUCKET_NAME      : "ivan-test-github"
+  EB_APPLICATION_NAME : "Ivan-env-github"
+  EB_ENVIRONMENT_NAME : "Ivan-first-app777" 
+  DEPLOY_PACKAGE_NAME : "ivan_app_$(( github.sha )).zip"
+  AWS_REGION_NAME     : "us-east-2"
   
   
   
