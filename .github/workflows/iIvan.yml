@@ -3,7 +3,7 @@ env:
   S3_BUCKET_NAME      : "ivan-test-github"
   EB_APPLICATION_NAME : "Ivan-env-github"
   EB_ENVIRONMENT_NAME : "Ivan-first-app777" 
-  DEPLOY_PACKAGE_NAME : "ivan_app_$(( github.sha )).zip"
+  DEPLOY_PACKAGE_NAME : "ivan_app_${{ github.sha }}.zip"
   AWS_REGION_NAME     : "us-east-2"
   
 on:
@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Create in Zip depl package
-    - uses: zip -r $(( env.DEPLOY_PACKAGE_NAME )) ./ -x *.git*
+    - uses: zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x *.git*
       
       
       
