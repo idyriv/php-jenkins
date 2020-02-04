@@ -1,4 +1,4 @@
-name: CI-CD-Pipline to AWS
+name: CI-CD-Pipline-to-AWS
 env: 
   S3_BUCKET_NAME     : "ivan-test-github"
   EB_APPLICATION_NAME: "Ivan-env-github"
