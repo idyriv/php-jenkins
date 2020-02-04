@@ -1,1 +1,70 @@
+#----------------iIvan------------------
+#----------------2020-------------------
+name: my-1-file
+env:
+  APPLICATION_NAME    : "MyBestApp"
+  DEPLOY_PACKAGE_NAME : "app-deploy-ver-${{ github.sha }}" 
+
+on: 
+  push:
+    branches:
+      - master 
+
+jobs:
+  my-testin-1:
+    runs-on : ubuntu-latest
+    steps   :
+      - name: Print Hello Message in Testing
+        run : echo "Hello iIvan testing"
+      - name: Execure few commands
+        run : |
+          echo "Message1"
+          echo "Message2"
+          echo "Message3"
+          echo "Application name: ${{ env.APPLICATION_NAME }}"
+      - name: List curent folder
+        run : ls -la 
+      - name: Git clone my repo
+        uses: actions/checkout@v1
+      - name: List curent folder
+        run : ls -la 
+    
+  my-deploy1:
+    runs-on: ubuntu-latest
+    needs: [my-testin-1]
+    env:
+      VAR1 : "job-level1"
+      VAR2 : "job-level2"        
+    steps:
+      - name: Print Hello Message in Deploy
+        run : echo "Hello iIvan deploy job"
+      - name: Print env var
+        run: |
+          echo "Var1 = ${{ env.VAR1 }}"
+          echo "Var2 = ${{ env.VAR2 }}" 
+          echo "Var3 = $LOCAL_VAR" 
+        env :
+          LOCAL_VAR: "super local varible"     
+      - name: Print Deploy package
+        run : echo "deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
+      - name: Lets test packages 1
+        run : aws --version
+      - name: Lets test packages 2
+        run : zip --version
+        
+
+    © 2020 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
 
