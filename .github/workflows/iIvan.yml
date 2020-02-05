@@ -28,8 +28,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_secret2_key }}
         aws-region.          : ${{ env.AWS_REGION_NAME }}
     
-    - name: copy deployment package to s3 bucket
-   
+
       
 
       
