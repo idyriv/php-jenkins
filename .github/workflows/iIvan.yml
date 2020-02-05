@@ -3,7 +3,7 @@ env:
   EB_PACKAGE_S3_BUCKET_NAME : "ivan-test-github"
   EB_APPLICATION_NAME       : "Ivan-env-github"
   EB_ENVIRONMENT_NAME       : "Ivan-env-github-env" 
-  DEPLOY_PACKAGE_NAME       : "ivan_app_${{ github.sha }}.zip"
+  DEPLOY_PACKAGE_NAME       : "Newapp-for-jenkins_${{ github.sha }}.zip"
   AWS_REGION_NAME           : "us-east-2"
   
 on:
