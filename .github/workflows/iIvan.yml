@@ -36,6 +36,7 @@ jobs:
   
   binstock2:
     runs-on: ubuntu-latest
+    needs: [binstock1]
     steps:
     - name: Create New ElasticBeanstalk App
       run: |
