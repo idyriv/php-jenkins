@@ -1,8 +1,8 @@
 name: CI-CD-Pipeline-to-AWS-ElasticBeastalk
 env: 
   EB_PACKAGE_S3_BUCKET_NAME : "ivan-test-github"
-  EB_APPLICATION_NAME       : "dima-env-github"
-  EB_ENVIRONMENT_NAME       : "Ivan-env-github-envDimon" 
+  EB_APPLICATION_NAME       : "Ivan-env-github"
+  EB_ENVIRONMENT_NAME       : "Ivan-env-github-envDimonxxx" 
   DEPLOY_PACKAGE_NAME       : "giti_ivD_${{ github.sha }}.zip"
   AWS_REGION_NAME           : "us-east-2"
   
